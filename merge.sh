@@ -13,7 +13,7 @@ if [[ $1 && $2 && $1!=$2 ]];
         echo "################## git merge $2 ########################"
         git merge $1;
         echo "################## git push $2 ########################"
-        echo  $all_branchs
+        git push origin $2;
     else 
     read -p '请输入要合并的目标分支'  branch1;
     read -p '请输入要合并的原分支'  branch2;
