@@ -9,6 +9,7 @@ if [[ $1 && $2 && $1!=$2 ]];
         read -p '请输入提交信息' reason
         git commit -m reason
         echo "################## git fetch  开始 ########################"
+        git fetch;
         echo "################## git fetch  结束 ########################"
         all_branchs=`git `;
 
