@@ -8,7 +8,11 @@ if [[ $1 && $2 && $1!=$2 ]];
         git add .
         read -p '请输入提交信息' reason
         git commit -m reason
-        echo "本地commit完成"
+        echo "################## git fetch  开始 ########################"
+        echo "################## git fetch  结束 ########################"
+        all_branchs=`git `;
+
+        echo  $all_branchs
     else 
     read -p '请输入要合并的目标分支'  branch1;
     read -p '请输入要合并的原分支'  branch2;
