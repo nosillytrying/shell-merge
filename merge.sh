@@ -11,7 +11,7 @@ if [[ $1 && $2 && $1!=$2 ]];
         echo "################## git fetch  开始 ########################"
         git fetch;
         echo "################## git fetch  结束 ########################"
-        all_branchs=`git `;
+        all_branchs=`git branch -a`;
 
         echo  $all_branchs
     else 
@@ -28,7 +28,7 @@ if [[ $1 && $2 && $1!=$2 ]];
           git commit -m reason;
           git fetch;
             echo "################## 结束 git fetch 结束 #####################"
-          all_branchs=`git `;
+          all_branchs=`git branch -a`;
 
           echo  $all_branchs
         fi
